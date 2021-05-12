@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wave.diary">
+
+	<!-- 일정 추가 -->
+	<insert id="insertSch" parameterType="ScheduleDto">
+		INSERT INTO WD_STUDY
+		VALUES(WD_STUDY_SEQ.nextval, #{subject}, #{content}, #{studyTime}, SYSDATE , #{memberCode});
+	</insert>
+</mapper>
+
+
+
+
+
+
+
+
+
